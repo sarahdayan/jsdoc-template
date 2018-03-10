@@ -668,7 +668,7 @@ exports.publish = function(taffyData, opts, tutorials) {
 
   generate(
     '',
-    'Home',
+    opts.query.title,
     packages
       .concat([
         {

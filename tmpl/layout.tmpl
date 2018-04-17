@@ -121,6 +121,10 @@ var usesSearch = Boolean(templates.search);
   <script src="scripts/linenumber.js"></script>
   <script src="scripts/pagelocation.js"></script>
 
+  <?js if (templates.cdn) { ?>
+  <script src="<?js= templates.cdn ?>"></script>
+  <?js } ?>
+
   <?js if (usesSearch) { ?>
   <script>
     $(function () {
